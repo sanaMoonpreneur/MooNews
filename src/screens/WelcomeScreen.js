@@ -45,7 +45,7 @@ export default function Welcome() {
             
           }}
         >
-          Latest articale </Text>
+          Latest article </Text>
           <View style={{flexDirection:'row'}}>
           <Text className=" text-4xl shadow-2xl text-black tracking-wider"
           style={{

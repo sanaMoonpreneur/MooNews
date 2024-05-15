@@ -25,7 +25,9 @@ export default function DiscoverScreen() {
   const navigation = useNavigation();
   const [withoutRemoved, setWithoutRemoved] = useState([]);
 
-  useEffect(() => {}, [activeCategory]);
+  useEffect(() => {
+   
+  }, [activeCategory]);
 
   const { data: discoverNew, isLoading: isDiscoverLoading } = useQuery({
     queryKey: ["discoverNews", activeCategory],
@@ -34,7 +36,7 @@ export default function DiscoverScreen() {
 
   const handleChangeCategory = (category) => {
     setActiveCategory(category);
-
+    console.log(category)
     const filteredArticles = discoverNew?.articles.filter(
       (article) => article.title !== "[Removed]"
     );

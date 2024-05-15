@@ -6,4 +6,5 @@ export const categories = [
   { id: 5, title: "science" },
   { id: 6, title: "sports" },
   { id: 7, title: "technology" },
+
 ];

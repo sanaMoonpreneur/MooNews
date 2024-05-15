@@ -187,6 +187,7 @@ export default function NewsSection({ newsProps }) {
       {/* Header */}
 
       <FlatList
+        initialNumToRender={10}
         nestedScrollEnabled={true}
         scrollEnabled={false}
         data={newsProps}
